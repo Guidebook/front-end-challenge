@@ -1,0 +1,38 @@
+.app-container {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  align-items: baseline;
+}
+
+.app {
+  margin: 0 auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-form__row {
+  padding: 6px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-form__field {
+  margin-left: 10px;
+}
+
+.profile-form__select {
+  width: 100%;
+}
+
+.profile-form__field--invalid {
+  border-color: red;
+}
+
+.profile-form__message--invalid {
+  color: red;
+}
+
+
