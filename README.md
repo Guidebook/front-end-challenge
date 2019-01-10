@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Front end take home challenge
 
-## Available Scripts
+1. [Overview](#overview)
+2. [How to work on this challenge](#how-to-work-on-this-challenge)
+2. [Time](#time)
+3. [Current code](#current-code)
+4. [Task](#task)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+The objective of this challenge is to give your interviewer a glimpse into your experience with React and to present you with a common code reorganization problem.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to work on this challenge
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Run `git clone https://github.com/Guidebook/front-end-challenge`
+2. Modify the code locally
+3. Send this to the hiring manager either as a link to a Github repo hosted on your account or as a zip file with the repo contents.
 
-### `npm test`
+## Time
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We have given you a task that will take you at least an hour. Although working on this challenge for longer than an hour is fine, we respect your time and will not expect you to. If you find yourself having spent an hour working on this and have not completed it, you may **stop working on the code and write some notes on what you were trying to accomplish in the hour and what you would have liked to do next.** We will not evaluate how much you accomplished, but would like to understand what your thought process was and what you spent that time working on.
 
-### `npm run build`
+## Current code
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The initial state of this project presents you with two forms which use a common `profile.js` component. One of the forms is blank, representing a 'New profile' state, and the other is prefilled with data, representing an 'Edit profile' state.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+All form fields are required, and submitting with any blank fields will result in a red message at the bottom of the form as well as a red border around the respective field. The message and red border will not disappear until you have filled in the required data and clicked submit again. If you have filled in all required data and submitted successfully, you will see a "Form submitted!" message, and the console will log the form's payload.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Task
 
-### `npm run eject`
+We are giving you three primary tasks:
+1. Use only controlled inputs for the profile form
+2. Separate the profile render function into new components where it makes sense
+3. Document what you completed along with what you were planning on doing next in a separate markdown file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Below are some helpful notes:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* After converting the form to use only controlled components, there should be no usage of refs remaining in the code.
+* When DRYing up the render method of `profile.js` into clean reusable components, prefer pure components to stateful ones.
+* Ideally the presence validation would be reused for all form fields.
+* When documenting what you did and what you'd do next, try to write the reasons for your choices so that we can follow your thought process.
+* Using only controlled inputs for the profile form will require you to move the form state from the DOM to the profile form.
+* If you are able to complete everything in one hour, running your code should be functionally identical to the original project.
