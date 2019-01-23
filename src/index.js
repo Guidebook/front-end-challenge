@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import New from './new';
-import Edit from './edit';
+import New from './components/new';
+import Edit from './components/edit';
 import * as serviceWorker from './serviceWorker';
 
 const App = () => (
